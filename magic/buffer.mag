@@ -1,0 +1,24 @@
+magic
+tech sky130A
+timestamp 1687703720
+<< locali >>
+rect -175 -20 -160 0
+rect 220 -20 235 0
+<< metal1 >>
+rect -175 195 -155 285
+rect -175 20 -155 110
+use cmos  cmos_0 ~/projects/buffer/magic
+timestamp 1687702059
+transform 1 0 -60 0 1 -10
+box -115 -30 90 320
+use cmos  cmos_1
+timestamp 1687702059
+transform 1 0 145 0 1 -10
+box -115 -30 90 320
+<< labels >>
+rlabel locali 235 -10 235 -10 3 Y
+port 1 e
+rlabel locali -175 -10 -175 -10 7 A
+port 4 w
+rlabel metal1 -175 65 -175 65 3 VP
+<< end >>
